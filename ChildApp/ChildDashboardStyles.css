@@ -1,0 +1,230 @@
+/* My Total Section */
+.my-total-section {
+    padding: 0.75rem;
+    text-align: center;
+}
+
+.my-total-section .total-label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #887B63;
+    margin-bottom: 0.5rem;
+}
+
+.my-total-section .total-amount {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4E4436;
+}
+
+.action-button {
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 0.8rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.claim-button { background-color: #34C759; }
+.swap-button { background-color: #ff8000; }
+.withdraw-button { background-color: #007AFF; }
+
+/* Spending Card */
+.spending-card {
+    background-color: rgb(252, 248, 234);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.spending-card .balance-icon {
+    color: #34C759;
+    font-size: 1.7em;  
+    margin-right: 0.75rem;
+    width: 24px;
+    text-align: center;
+}
+
+/* Savings Card */
+.savings-card {
+    background-color: rgb(252, 248, 234);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.savings-card .balance-icon {
+    color: #fb9174ed;
+    font-size: 1.7em; 
+    margin-right: 0.75rem;
+    width: 24px;
+    text-align: center;
+}
+
+/* Rewards Card */
+.rewards-card {
+    background-color: rgb(252, 248, 234);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rewards-card .text-balance-value {
+    font-size: 2.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.rewards-card .text-balance {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.claim-reward-button {
+    background-color: #34C759;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 0.8rem 3rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+/* Shared styles */
+.balance-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.balance-left {
+    display: flex;
+    align-items: center;
+}
+
+.text-balance {
+    color: #887B63;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.text-balance-value {
+    color: #4E4436;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+/* Marshmallow Logo */
+.marshmallow-logo {
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.header {
+    position: relative;
+    z-index: 1;
+}
+
+.rewards-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.rewards-modal.active {
+    display: flex;
+}
+
+.rewards-content {
+    background-color: rgb(252, 248, 234);
+    padding: 2rem;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.rewards-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4E4436;
+    margin-bottom: 1.5rem;
+}
+
+.badges-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.badge-item {
+    background-color: white;
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.badge-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #FFE5B4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #FF8C00;
+}
+
+.badge-title {
+    font-weight: bold;
+    color: #4E4436;
+    font-size: 0.9rem;
+}
+
+.badge-description {
+    color: #887B63;
+    font-size: 0.8rem;
+}
+
+.close-modal-btn {
+    background-color: #4E4436;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.close-modal-btn:hover {
+    background-color: #3D3529;
+}

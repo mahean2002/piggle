@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Child Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="../globalStyles.css" rel="stylesheet">
+    <link href="ChildDashboardStyles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <i class="fas fa-user-circle"></i>
+        <img src="../assets/marshmallow_logo.png" alt="Marshmallow Logo" class="marshmallow-logo">
+        <i class="fas fa-cog"></i>
+    </div>
+    
+    <div class="my-total-section">
+        <div class="total-label">My Total</div>
+        <div class="total-amount">$EDU <span id="totalBalance">0.00</span></div>
+    </div>
+    
+    <div class="content">
+        <div class="flex justify-between mb-6">
+            <button class="flex-1 action-button claim-button mx-1">Claim</button>
+            <button class="flex-1 action-button swap-button mx-1">Swap</button>
+            <button class="flex-1 action-button withdraw-button mx-1">Withdraw</button>
+        </div>
+        
+        <div class="spending-card">
+            <div class="balance-content">
+                <div class="balance-left">
+                    <i class="fas fa-credit-card balance-icon"></i>
+                    <span class="text-balance">Spending</span>
+                </div>
+                <span class="text-balance-value">$EDU <span id="spendingBalance">0.00</span></span>
+            </div>
+        </div>
+        
+        <div class="savings-card">
+            <div class="balance-content">
+                <div class="balance-left">
+                    <i class="fas fa-piggy-bank balance-icon"></i>
+                    <span class="text-balance">Savings</span>
+                </div>
+                <span class="text-balance-value">$EDU <span id="savingsBalance">0.00</span></span>
+            </div>
+        </div>
+        
+        <div class="rewards-card">
+            <span class="text-balance-value">+$EDU <span id="rewardsBalance">0.00</span></span>
+            <span class="text-balance">Rewards from Savings</span>
+            <button class="claim-reward-button">Claim Reward</button>
+        </div>
+    </div>
+    
+    <div class="tab-bar">
+        <div class="tab-item active">
+            <i class="fas fa-home"></i>
+        </div>
+        <a href="#" class="tab-item">
+            <i class="fas fa-gift"></i>
+        </a>
+        <a href="ChildChoreView.html" class="tab-item">
+            <i class="fas fa-suitcase"></i>
+        </a>
+        <a href="#" class="tab-item">
+            <div class="notification-icon">
+                <i class="fas fa-bell"></i>
+                <span class="notification-badge">1</span>
+            </div>
+        </a>
+    </div>
+    
+    <!-- Rewards Modal -->
+    <div class="rewards-modal" id="rewardsModal">
+        <div class="rewards-content">
+            <div class="rewards-title">My Learning Badge NFTs</div>
+            <div class="badges-grid">
+                <div class="badge-item">
+                    <div class="badge-icon">
+                        <i class="fas fa-piggy-bank"></i>
+                    </div>
+                    <div class="badge-title">Savings Master</div>
+                    <div class="badge-description">Saved $50 in total</div>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="badge-title">Growth Mindset</div>
+                    <div class="badge-description">Maintained savings for 30 days</div>
+                </div>
+            </div>
+            <button class="close-modal-btn" id="closeRewardsModal">Close</button>
+        </div>
+    </div>
+    
+    <script type="module" src="childapp.js"></script>
+    <script src="rewards.js" type="module"></script>
+</body>
+</html>
