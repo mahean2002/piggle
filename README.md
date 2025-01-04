@@ -24,5 +24,5 @@ The Child Dashboard (`ChildApp/ChildDashboardView.html`) is designed for the chi
 1. **Total Balance Display**: Shows the child's total account balance.
 2. **Action Buttons**: Quick access to Claim, Swap, and Withdraw functions.
 3. **Spending and Savings Cards**: Display current balances for spending and savings accounts.
-4. **Rewards Card**: Shows available rewards from savings and allows claiming.
+4. **Learning Badge NFTs**: Shows available learning/milestones badge NFTs from savings and allows claiming.
 5. **Navigation**: Includes links to other sections like Chores, Quests, and Notifications.
