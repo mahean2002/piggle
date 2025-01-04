@@ -2,7 +2,7 @@
 
 ## DEMO
 
-[https://piggle-radar.replit.app/](https://piggle-radar.replit.app/)
+[https://piggle.vercel.app/)
 
 ## Parent Dashboard
 
